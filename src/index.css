@@ -13,7 +13,7 @@ body {
   padding-top: 1vh;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  font-size: 200px;
+  font-size: 125px;
   font-weight: 600;
   color: rgb(251, 251, 251);
   text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.349);
@@ -34,7 +34,13 @@ body {
 }
 
 .cardcontainer{
-  display: -webkit-inline-box;
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  gap: 1vw; 
+  justify-content: center;
+  align-content: center;
+  grid-column: 1;
+  padding-bottom: 1vw;
 }
 
 .Avatar{
@@ -43,7 +49,6 @@ body {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  align-items: center;
 }
 
 .card:hover {
@@ -51,7 +56,6 @@ body {
 }
 
 .container {
-  padding: 2px 16px;
   color: rgb(255, 255, 255);
 }
 
@@ -59,9 +63,15 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
   background-color: teal;
-  display: grid;
-  font-size: 32px;
+  font-size: 24px;
   vertical-align: bottom;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.LinkedIn:hover {
+  background-color: rgb(0, 82, 82);
 }
 
 nav.primary-navigation {
@@ -82,10 +92,11 @@ nav.primary-navigation ul li {
   text-align: center;
 }
 
-nav.primary-navigation li a {
+a {
+  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
-a {
-  text-decoration: none;
+a:hover{
+  color: teal;
 }
