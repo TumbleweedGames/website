@@ -2,10 +2,62 @@
   font-family: Arial, Helvetica;
 }
 
+body {
+  background-color: rgb(24, 24, 24);
+}
+
 #AzoicTitle {
   margin-top: 40vh;
   font-size: 10em;
   font-weight: 600;
-  text-shadow: 4px 4px 10px #0004;
+  color: rgb(251, 251, 251);
+  text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.349);
   text-align: center;
+}
+
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0 0 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: arvo;
+}
+
+nav.primary-navigation li a {
+  color: rgb(255, 255, 255);
+}
+
+nav.primary-navigation li a:hover {
+  color: #45e026;
+}
+
+nav.primary-navigation ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #45e026;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
 }
