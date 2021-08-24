@@ -1,0 +1,27 @@
+.effect {
+    width: 100%;
+    padding: 50px 0px 70px 0px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.effect .buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; 
+    justify-content: center;
+}
+
+.effect a {
+    text-decoration: none !important;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+}
